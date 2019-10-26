@@ -9,7 +9,7 @@ the number they want the square root of as the first parameter, and "sqrt" as th
 
 
 
-let calculate = (x, y, operation) =>{
+let calculate = (operation, x, y) =>{
 
 	if (operation == "add") { 
 		return (x+y);
@@ -27,6 +27,6 @@ let calculate = (x, y, operation) =>{
 		return (Math.sqrt(x))
 }}
 
-console.log(calculate(9, "sqrt"))
+console.log(calculate("sqrt", 9))
 
 
