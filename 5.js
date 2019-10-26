@@ -15,62 +15,31 @@ Calling your function should print something like this:
 # # # # 
  # # # #
 # # # #
-
-*/
-
-/*let grid = (length, width) => {
-
-
-let white = " "
-let black = "#"
-let blankPage = 
-
-	for (let i = 0; i < 
-
-
-//for width " "
 */
 
 
-let map = [];
-
-createMap();
-
-console.log(map);
-
-function createMap() {
-    for (let x = 0; x < 5; x++) {
-    				map[x] = [];
-        for (let y = 0; y < 5; y++) {
-            addCell(x, y); 
+function makeGrid() {
+    for (i = 1; i  <= 8; i ++) {
+    let square = " "
+     if (i % 2 !== 0) {
+    for (let a = 1; a <= 8; a++) {
+         if (a % 2 !== 0) {
+                    square += " "
+                } else if (a % 2 === 0) {
+                    square += "#"
+                }
+            }
+            console.log(square);
+        } else if (i % 2 === 0) {
+            for (let a = 1; a <= 8; a++) {
+                if (a % 2 !== 0) {
+                    square += "#"
+                } else if (a % 2 === 0) {
+                    square += " "
+                }
+            }
+            console.log(square);
         }
     }
 }
-
-function addCell(x, y) {
-    map[x][y] = cell(x,y); // create a new object on x and y
-}
-
-function cell(x,y) {
-	return (x+1)+":"+(y+1);
-}
-
-
-/*function makeBlocks() {
-        for (var i = 0; i < 3; i++) {
-            var row = document.createElement('div');
-            row.className = "row";
-            for (var j = 0; j < 3; j++) {
-                var box = document.createElement('div');
-                box.className = "box";
-                row.appendChild(box);
-            }                
-            document.getElementById('boxParent').appendChild(row);
-        }
-    }
-
-console.log(makeBlocks)
-
-*/
-
-
+makeGrid();
