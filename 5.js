@@ -15,22 +15,28 @@ Calling your function should print something like this:
 # # # # 
  # # # #
 # # # #
+
 */
 
 
 function makeGrid() {
-    for (i = 1; i  <= 8; i ++) {
+    
+for (i = 1; i  <= 8; i ++) {
+
     let square = " "
+
      if (i % 2 !== 0) {
-    for (let a = 1; a <= 8; a++) {
+        for (let a = 1; a <= 8; a++) {
          if (a % 2 !== 0) {
-                    square += " "
-                } else if (a % 2 === 0) {
+              square += " "
+                } 
+        else if (a % 2 === 0) {
                     square += "#"
                 }
             }
-            console.log(square);
-        } else if (i % 2 === 0) {
+        console.log(square);
+        } 
+        else if (i % 2 === 0) {
             for (let a = 1; a <= 8; a++) {
                 if (a % 2 !== 0) {
                     square += "#"
