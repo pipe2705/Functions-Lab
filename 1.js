@@ -2,8 +2,8 @@
 
 let sayHello = (name)=>{
 
-
+    console.log(name);
 }
 
-console.log(sayHello("Felipe"))
+sayHello("Felipe"); 
 
